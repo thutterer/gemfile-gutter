@@ -2,13 +2,13 @@
   "name": "gemfile-unlocked",
   "main": "./lib/gemfile-unlocked",
   "version": "0.0.0",
-  "description": "A short description of your package",
+  "description": "Unlock all the information about your gems",
   "keywords": [
   ],
   "activationCommands": {
     "atom-workspace": "gemfile-unlocked:toggle"
   },
-  "repository": "https://github.com/atom/gemfile-unlocked",
+  "repository": "https://github.com/thutterer/gemfile-unlocked",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
