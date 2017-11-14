@@ -1,0 +1,26 @@
+{
+  "context-menu": {
+    "atom-text-editor": [
+      {
+        "label": "Toggle gemfile-unlocked",
+        "command": "gemfile-unlocked:toggle"
+      }
+    ]
+  },
+  "menu": [
+    {
+      "label": "Packages",
+      "submenu": [
+        {
+          "label": "gemfile-unlocked",
+          "submenu": [
+            {
+              "label": "Toggle",
+              "command": "gemfile-unlocked:toggle"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
