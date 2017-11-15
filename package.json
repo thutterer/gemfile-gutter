@@ -12,10 +12,11 @@
   },
   "dependencies": {},
   "configSchema": {
-    "automaticallyShow": {
+    "showAutomatically": {
+      "order": 1,
       "type": "boolean",
       "default": true,
-      "description": "Shows the gutter when a Gemfile is opened.\nIf disabled, the gutter can still be shown with the toggle command."
+      "description": "Shows the gutter when a Gemfile is opened.<br/>If disabled, the gutter can still be shown with the `gemfile-gutter:toggle` command."
     },
     "gemfileNames": {
       "description": "The gutter will only be available for files with these names.",
