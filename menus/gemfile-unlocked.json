@@ -2,8 +2,8 @@
   "context-menu": {
     "atom-text-editor": [
       {
-        "label": "Toggle gemfile-unlocked",
-        "command": "gemfile-unlocked:toggle"
+        "label": "Toggle gemfile-gutter",
+        "command": "gemfile-gutter:toggle"
       }
     ]
   },
@@ -12,11 +12,11 @@
       "label": "Packages",
       "submenu": [
         {
-          "label": "gemfile-unlocked",
+          "label": "gemfile-gutter",
           "submenu": [
             {
               "label": "Toggle",
-              "command": "gemfile-unlocked:toggle"
+              "command": "gemfile-gutter:toggle"
             }
           ]
         }

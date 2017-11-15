@@ -1,11 +1,11 @@
 {
-  "name": "gemfile-unlocked",
-  "main": "./lib/gemfile-unlocked",
+  "name": "gemfile-gutter",
+  "main": "./lib/main",
   "version": "0.0.0",
   "description": "Unlock your Gemfile",
   "keywords": [],
   "activationCommands": {},
-  "repository": "https://github.com/thutterer/gemfile-unlocked",
+  "repository": "https://github.com/thutterer/gemfile-gutter",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"

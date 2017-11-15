@@ -1,6 +1,6 @@
 'use babel';
 
-import GemfileUnlocked from '../lib/gemfile-unlocked';
+import GemfileUnlocked from '../lib/gemfile-gutter';
 
 // Use the command `window:run-package-specs` (cmd-alt-ctrl-p) to run specs.
 //
@@ -12,32 +12,32 @@ describe('GemfileUnlocked', () => {
 
   beforeEach(() => {
     workspaceElement = atom.views.getView(atom.workspace);
-    activationPromise = atom.packages.activatePackage('gemfile-unlocked');
+    activationPromise = atom.packages.activatePackage('gemfile-gutter');
   });
 
-  describe('when the gemfile-unlocked:toggle event is triggered', () => {
+  describe('when the gemfile-gutter:toggle event is triggered', () => {
     it('hides and shows the modal panel', () => {
       // Before the activation event the view is not on the DOM, and no panel
       // has been created
-      expect(workspaceElement.querySelector('.gemfile-unlocked')).not.toExist();
+      expect(workspaceElement.querySelector('.gemfile-gutter')).not.toExist();
 
       // This is an activation event, triggering it will cause the package to be
       // activated.
-      atom.commands.dispatch(workspaceElement, 'gemfile-unlocked:toggle');
+      atom.commands.dispatch(workspaceElement, 'gemfile-gutter:toggle');
 
       waitsForPromise(() => {
         return activationPromise;
       });
 
       runs(() => {
-        expect(workspaceElement.querySelector('.gemfile-unlocked')).toExist();
+        expect(workspaceElement.querySelector('.gemfile-gutter')).toExist();
 
-        let gemfileUnlockedElement = workspaceElement.querySelector('.gemfile-unlocked');
+        let gemfileUnlockedElement = workspaceElement.querySelector('.gemfile-gutter');
         expect(gemfileUnlockedElement).toExist();
 
         let gemfileUnlockedPanel = atom.workspace.panelForItem(gemfileUnlockedElement);
         expect(gemfileUnlockedPanel.isVisible()).toBe(true);
-        atom.commands.dispatch(workspaceElement, 'gemfile-unlocked:toggle');
+        atom.commands.dispatch(workspaceElement, 'gemfile-gutter:toggle');
         expect(gemfileUnlockedPanel.isVisible()).toBe(false);
       });
     });
@@ -51,11 +51,11 @@ describe('GemfileUnlocked', () => {
       // workspaceElement to the DOM are generally slower than those off DOM.
       jasmine.attachToDOM(workspaceElement);
 
-      expect(workspaceElement.querySelector('.gemfile-unlocked')).not.toExist();
+      expect(workspaceElement.querySelector('.gemfile-gutter')).not.toExist();
 
       // This is an activation event, triggering it causes the package to be
       // activated.
-      atom.commands.dispatch(workspaceElement, 'gemfile-unlocked:toggle');
+      atom.commands.dispatch(workspaceElement, 'gemfile-gutter:toggle');
 
       waitsForPromise(() => {
         return activationPromise;
@@ -63,9 +63,9 @@ describe('GemfileUnlocked', () => {
 
       runs(() => {
         // Now we can test for view visibility
-        let gemfileUnlockedElement = workspaceElement.querySelector('.gemfile-unlocked');
+        let gemfileUnlockedElement = workspaceElement.querySelector('.gemfile-gutter');
         expect(gemfileUnlockedElement).toBeVisible();
-        atom.commands.dispatch(workspaceElement, 'gemfile-unlocked:toggle');
+        atom.commands.dispatch(workspaceElement, 'gemfile-gutter:toggle');
         expect(gemfileUnlockedElement).not.toBeVisible();
       });
     });
