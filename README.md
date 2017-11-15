@@ -1,6 +1,6 @@
 # gemfile-gutter
 
-gemfile-gutter is an [Atom](https://atom.io/) package which adds a gutter to your [Gemfile](https://bundler.io/gemfile.html) showing each gem's version.
+gemfile-gutter is an [Atom](https://atom.io/) package which adds a gutter to your [Gemfile](https://bundler.io/gemfile.html), showing each gem's version.
 Clicking the gutter opens the gem on [RubyGems.org](https://rubygems.org/).
 
 ## Installation

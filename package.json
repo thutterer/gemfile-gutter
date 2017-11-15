@@ -2,7 +2,7 @@
   "name": "gemfile-gutter",
   "main": "./lib/main",
   "version": "0.0.0",
-  "description": "Unlock your Gemfile",
+  "description": "A gutter for your Gemfile",
   "keywords": [],
   "activationCommands": {},
   "repository": "https://github.com/thutterer/gemfile-gutter",
