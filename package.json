@@ -10,5 +10,27 @@
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "configSchema": {
+    "automaticallyShow": {
+      "type": "boolean",
+      "default": true,
+      "description": "Shows the gutter when a Gemfile is opened.\nIf disabled, the gutter can still be shown with the toggle command."
+    },
+    "gutterWidth": {
+      "type": "integer",
+      "default": 100
+    },
+    "gemfileNames": {
+      "description": "The gutter will only be available for files with these names.",
+      "type": "array",
+      "default": [
+        "Gemfile",
+        "gemfile"
+      ],
+      "items": {
+        "type": "string"
+      }
+    }
+  }
 }
