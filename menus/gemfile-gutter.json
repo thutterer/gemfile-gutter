@@ -1,18 +1,10 @@
 {
-  "context-menu": {
-    "atom-text-editor": [
-      {
-        "label": "Toggle gemfile-gutter",
-        "command": "gemfile-gutter:toggle"
-      }
-    ]
-  },
   "menu": [
     {
       "label": "Packages",
       "submenu": [
         {
-          "label": "gemfile-gutter",
+          "label": "Gemfile Gutter",
           "submenu": [
             {
               "label": "Toggle",
