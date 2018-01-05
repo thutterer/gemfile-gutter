@@ -3,7 +3,7 @@
   "main": "./lib/main",
   "version": "0.3.1",
   "description": "A gutter for your Gemfile",
-  "keywords": [],
+  "keywords": ["gem", "gemfile", "ruby", "rubygems", "rails"],
   "activationCommands": {},
   "repository": "https://github.com/thutterer/gemfile-gutter",
   "license": "MIT",
