@@ -1,6 +1,6 @@
 # gemfile-gutter
 
-An [Atom](https://atom.io/) package which adds a gutter to your [Gemfile](https://bundler.io/gemfile.html), showing each gem's version.
+An [Atom](https://atom.io/) package which adds a gutter to your [Gemfile](https://bundler.io/gemfile.html) and Gemfile.lock, showing each gem's installed version.
 Clicking the gutter opens the gem on [RubyGems.org](https://rubygems.org/).
 
 ![demo](./demo.png)
@@ -19,4 +19,4 @@ You can change this behavior in the settings or toggle the gutter with its keybi
 
 ## How it works
 
-gemfile-gutter parses the Gemfile.lock to find the versions.
+gemfile-gutter parses the Gemfile.lock to find the installed versions.
